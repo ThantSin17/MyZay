@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom"
+    app:startDestination="@id/navigation_ice">
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_ice"-->
+<!--        android:name="com.stone.myzay.fragment.ICEFragment"-->
+<!--        android:label="@string/ice"-->
+<!--        tools:layout="@layout/i_c_e_fragment" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_zay"-->
+<!--        android:name="com.stone.myzay.Zay1Fragment"-->
+<!--        android:label="@string/zay"-->
+<!--        tools:layout="@layout/zay1_fragment" />-->
+
+    <fragment
+        android:id="@+id/navigation_ice"
+        android:name="com.stone.myzay.fragment.ICEFragment"
+        android:label="ICE"
+        tools:layout="@layout/ice_fragment" />
+    <fragment
+        android:id="@+id/navigation_zay"
+        android:name="com.stone.myzay.fragment.ZayFragment"
+        android:label="ZAY"
+        tools:layout="@layout/zay_fragment" />
+</navigation>

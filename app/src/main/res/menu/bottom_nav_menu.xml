@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_zay"
+        android:icon="@drawable/ic_price"
+        android:title="@string/zay"
+         />
+    <item
+        android:id="@+id/navigation_ice"
+        android:icon="@drawable/ic_ice_cream"
+        android:title="@string/ice"
+        />
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/dialog_container"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:gravity="center"
+        android:id="@+id/date"
+        android:includeFontPadding="false"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:text="CurrentDate"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCalender"
+        app:layout_constraintEnd_toStartOf="@id/imgCalender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgCalender" />
+
+    <ImageView
+        android:id="@+id/imgCalender"
+        android:layout_height="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_width="30dp"
+        android:src="@drawable/ic_round_calendar_today_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:entries="@array/iceCategories"
+        app:layout_constraintEnd_toEndOf="@+id/imgCalender"
+        app:layout_constraintStart_toStartOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@id/date" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:hint="၁၀၀ တန်"
+        android:id="@+id/textInputLayout4"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_100"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:hint="၅၀ တန်"
+        android:id="@+id/textInputLayout3"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_50"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
